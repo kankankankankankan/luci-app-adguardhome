@@ -3,14 +3,14 @@
 bind_host: 0.0.0.0
 bind_port: 3000
 users:
-- name: root
-  password: $2y$10$FfeQavihMUiXCuJhHuQwy.6EOXDvkXb/S50qI5fXizqarNT/ShhQm
+- name: admin
+  password: $2a$10$V/DnY.Yi9C8kjCKt1UssaO5jrccpSj3AAiS4FNcuYBxVbtDJV.NVi
 language: ""
 rlimit_nofile: 0
 dns:
   bind_host: 0.0.0.0
-  port: 5553
-  statistics_interval: 1
+  port: 1053
+  statistics_interval: 7
   protection_enabled: true
   filtering_enabled: true
   filters_update_interval: 24
