@@ -1,4 +1,5 @@
 #提交就可以直接用的配置模板文件
+#此配置模板要求最低版本为v0.102.0
 #a template config can be use with a apply
 bind_host: 0.0.0.0
 bind_port: 3000
@@ -11,19 +12,21 @@ dns:
   bind_host: 0.0.0.0
   port: 1053
   statistics_interval: 7
+  querylog_enabled: false
+  querylog_interval: 90
+  querylog_size_memory: 1000
   protection_enabled: true
   filtering_enabled: true
   filters_update_interval: 24
   blocking_mode: nxdomain
   blocked_response_ttl: 10
-  querylog_enabled: false
-  querylog_interval: 1
   ratelimit: 0
   ratelimit_whitelist: []
   refuse_any: false
   bootstrap_dns:
 #bootstrap_dns
   all_servers: false
+  fastest_addr: true
   allowed_clients: []
   disallowed_clients: []
   blocked_hosts: []
@@ -106,4 +109,4 @@ dhcp:
 clients: []
 log_file: ""
 verbose: false
-schema_version: 5
+schema_version: 6
