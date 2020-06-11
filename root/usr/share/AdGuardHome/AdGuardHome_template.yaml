@@ -6,8 +6,11 @@ bind_port: 3000
 users:
 - name: admin
   password: $2a$10$V/DnY.Yi9C8kjCKt1UssaO5jrccpSj3AAiS4FNcuYBxVbtDJV.NVi
+http_proxy: ""
 language: ""
 rlimit_nofile: 0
+debug_pprof: false
+web_session_ttl: 720
 dns:
   bind_host: 0.0.0.0
   port: 1053
@@ -15,53 +18,58 @@ dns:
   querylog_enabled: false
   querylog_interval: 90
   querylog_size_memory: 1000
+  anonymize_client_ip: false
   protection_enabled: true
-  filtering_enabled: true
-  filters_update_interval: 24
   blocking_mode: nxdomain
-  blocked_response_ttl: 10
+  blocking_ipv4: ""
+  blocking_ipv6: ""
+  blocked_response_ttl: 60
+  parental_block_host: family-block.dns.adguard.com
+  safebrowsing_block_host: standard-block.dns.adguard.com
   ratelimit: 0
   ratelimit_whitelist: []
   refuse_any: false
-#DNS
-  upstream_dns:                                          
-  - 114.114.114.114                                      
-  - 114.114.115.115                                      
-  - 223.5.5.5                                            
-  - 223.6.6.6                                            
-  - 1.2.4.8                                              
-  - 210.2.4.8                                            
-  - 182.254.116.116                                      
-  - 119.29.29.29                                         
-  - 117.50.11.11                                         
+  upstream_dns:
+  - 114.114.114.114
+  - 114.114.115.115
+  - 223.5.5.5
+  - 223.6.6.6
+  - 1.2.4.8
+  - 210.2.4.8
+  - 182.254.116.116
+  - 119.29.29.29
+  - 117.50.11.11
   - '[/google.com/]127.0.0.1:5335'
   - '[/youtube.com/]127.0.0.1:5335'
   - '[/twitter.com/]127.0.0.1:5335'
-  - '[/twitch.tv/]127.0.0.1:5335'              
+  - '[/twitch.tv/]127.0.0.1:5335'
   - https://geek.qingjie.me:13803/dns-query
   - https://223.5.5.5/dns-query
   - https://223.6.6.6/dns-query
   bootstrap_dns:
-  - 114.114.114.114                                      
-  - 114.114.115.115                                      
-  - 223.5.5.5                                            
-  - 223.6.6.6                                            
-  - 1.2.4.8                                              
-  - 210.2.4.8                                            
-  - 182.254.116.116                                      
-  - 119.29.29.29                                         
-  - 117.50.11.11   
-#bootstrap_dns
-  all_servers: false
-  fastest_addr: true
+  - 114.114.114.114
+  - 114.114.115.115
+  - 223.5.5.5
+  - 223.6.6.6
+  - 1.2.4.8
+  - 210.2.4.8
+  - 182.254.116.116
+  - 119.29.29.29
+  - 117.50.11.11
+  all_servers: true
+  fastest_addr: false
   allowed_clients: []
   disallowed_clients: []
   blocked_hosts: []
-  parental_block_host: ""
-  safebrowsing_block_host: ""
-  blocked_services: []
   cache_size: 4194304
-  parental_sensitivity: 13
+  cache_ttl_min: 0
+  cache_ttl_max: 0
+  bogus_nxdomain: []
+  aaaa_disabled: false
+  enable_dnssec: false
+  edns_client_subnet: false
+  filtering_enabled: true
+  filters_update_interval: 24
   parental_enabled: false
   safesearch_enabled: false
   safebrowsing_enabled: false
@@ -70,14 +78,15 @@ dns:
   parental_cache_size: 1048576
   cache_time: 30
   rewrites: []
-  upstream_dns:
-#upstream_dns
+  blocked_services: []
 tls:
   enabled: false
   server_name: ""
   force_https: false
   port_https: 443
   port_dns_over_tls: 853
+  allow_unencrypted_doh: false
+  strict_sni_check: false
   certificate_chain: ""
   private_key: ""
   certificate_path: ""
@@ -123,6 +132,7 @@ filters:
   url: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD/anti-ad-easylist.txt
   name: anti-AD(Adblock+neohosts+yhosts+cjxlist+adhlist)
   id: 1577113202
+whitelist_filters: []
 user_rules: []
 dhcp:
   enabled: false
