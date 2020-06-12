@@ -129,7 +129,7 @@ filters:
   name: StevenBlack host+fakenews + gambling + porn + social
   id: 1575618243
 - enabled: false
-  url: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD/anti-ad-easylist.txt
+  url: https://gitee.com/privacy-protection-tools/anti-ad/raw/master/easylist.txt
   name: anti-AD(Adblock+neohosts+yhosts+cjxlist+adhlist)
   id: 1577113202
 whitelist_filters: []
