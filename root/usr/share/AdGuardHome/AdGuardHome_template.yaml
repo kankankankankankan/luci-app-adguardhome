@@ -152,9 +152,9 @@ filters:
   url: https://gitee.com/banbendalao/adguard/raw/master/ADgk.txt
   name: ADgk手机去广告规则
   id: 1577113202
-- enabled: false
+- enabled: true
   url: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
-  name: 大圣净化: 主要针对国内视频网站
+  name: 大圣净化-视频网站
   id: 1577113202
 whitelist_filters: []
 user_rules:
