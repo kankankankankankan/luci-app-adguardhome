@@ -161,6 +161,8 @@ user_rules:
 - '||t7z.cupid.ptqy.gitv.tv^$important'
 - '@@||g.live.com^$important'
 - '@@||s.click.taobao.com^$important'
+- '@@||ipassport.ele.me^$important'
+- '@@||wl.jd.com^$important'
 dhcp:
   enabled: false
   interface_name: ""
