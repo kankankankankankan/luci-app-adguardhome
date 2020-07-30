@@ -156,6 +156,8 @@ user_rules:
 - '@@||s.click.taobao.com^$important'
 - '@@||ipassport.ele.me^$important'
 - '@@||wl.jd.com^$important'
+- '@@||subscription.iqiyi.com^important'
+- '@@||baiducdncnc.inter.iqiyi.com^important'
 dhcp:
   enabled: false
   interface_name: ""
