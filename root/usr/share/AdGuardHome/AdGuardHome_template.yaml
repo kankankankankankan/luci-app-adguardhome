@@ -133,9 +133,9 @@ filters:
   url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
   name: 乘风通用过滤规则
   id: 1575618243
-- enabled: false
-  url: https://gitee.com/privacy-protection-tools/anti-ad/raw/master/easylist.txt
-  name: anti-AD(Adblock+neohosts+yhosts+cjxlist+adhlist)
+- enabled: true
+  url: https://anti-ad.net/easylist.txt
+  name: anti-AD
   id: 1577113202
 - enabled: false
   url: https://easylist-downloads.adblockplus.org/easylistchina.txt
