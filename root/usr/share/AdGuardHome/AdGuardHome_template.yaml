@@ -16,7 +16,7 @@ dns:
   port: 1053
   statistics_interval: 7
   querylog_enabled: false
-  querylog_interval: 30
+  querylog_interval: 7
   querylog_size_memory: 1000
   anonymize_client_ip: false
   protection_enabled: true
@@ -151,13 +151,17 @@ filters:
   id: 1577113202
 whitelist_filters: []
 user_rules:
-- '||t7z.cupid.ptqy.gitv.tv^$important'
-- '@@||g.live.com^$important'
-- '@@||s.click.taobao.com^$important'
-- '@@||ipassport.ele.me^$important'
-- '@@||wl.jd.com^$important'
-- '@@||subscription.iqiyi.com^important'
-- '@@||baiducdncnc.inter.iqiyi.com^important'
+- '||t7z.cupid.ptqy.gitv.tv^$'
+- '@@||g.live.com^$'
+- '@@||s.click.taobao.com^$'
+- '@@||ipassport.ele.me^$'
+- '@@||wl.jd.com^$'
+- '@@||qingjie.me^'
+- '@@||laoda.cat^'
+- '@@||subscription.iqiyi.com^'
+- '@@||baiducdncnc.inter.iqiyi.com^'
+- '@@||eco.taobao.com^'
+- '@@||sessions.bugsnag.com^'
 dhcp:
   enabled: false
   interface_name: ""
