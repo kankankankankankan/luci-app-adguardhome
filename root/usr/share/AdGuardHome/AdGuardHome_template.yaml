@@ -141,10 +141,6 @@ filters:
   url: https://easylist-downloads.adblockplus.org/easylistchina.txt
   name: Easylist China
   id: 1577113202
-- enabled: false
-  url: https://gitee.com/banbendalao/adguard/raw/master/ADgk.txt
-  name: ADgk手机去广告规则
-  id: 1577113202
 - enabled: true
   url: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
   name: 大圣净化-视频网站
@@ -152,16 +148,25 @@ filters:
 whitelist_filters: []
 user_rules:
 - '||t7z.cupid.ptqy.gitv.tv^$'
+- '@@||app-measurement.com^'
+- '@@||vs.biz.weibo.com^'
+- '@@||biz.weibo.com^'
+- '@@||dp.im.weibo.cn^'
+- '@@||sinajs.cn^'
+- '@@||adimg.uve.weibo.com^'
+- '@@||wbapp.uve.weibo.com^'
+- '@@||img.mobile.sina.cn^'
 - '@@||g.live.com^$'
 - '@@||s.click.taobao.com^$'
 - '@@||ipassport.ele.me^$'
 - '@@||wl.jd.com^$'
-- '@@||qingjie.me^'
 - '@@||laoda.cat^'
 - '@@||subscription.iqiyi.com^'
 - '@@||baiducdncnc.inter.iqiyi.com^'
+- '@@||hotchat-im.iqiyi.com^'
 - '@@||eco.taobao.com^'
 - '@@||sessions.bugsnag.com^'
+- '@@||itunes.apple.com^'
 dhcp:
   enabled: false
   interface_name: ""
