@@ -108,7 +108,19 @@ filters:
 - enabled: true
   url: https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts
   name: 色情网站和澳门皇家赌场
-  id: 1601696732
+  id: 1601235017
+- enabled: true
+  url: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
+  name: 大圣净化-主要针对国内视频网站
+  id: 1601235018
+- enabled: true
+  url: https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt
+  name: GoodbyeAds
+  id: 1601235019
+- enabled: true
+  url: https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+  name: ADgk手机去广告规则
+  id: 1601235020
 whitelist_filters: []
 user_rules:
 - '||t7z.cupid.ptqy.gitv.tv^$'
