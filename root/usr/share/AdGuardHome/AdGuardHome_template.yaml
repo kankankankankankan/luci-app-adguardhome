@@ -121,6 +121,10 @@ filters:
   url: https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
   name: ADgk手机去广告规则
   id: 1601235020
+- enabled: true
+  url: https://www.kbsml.com/wp-content/uploads/adblock/adguard/adg-kall-dns.txt
+  name: kbsml
+  id: 1601235021
 whitelist_filters: []
 user_rules:
 - '||t7z.cupid.ptqy.gitv.tv^$'
