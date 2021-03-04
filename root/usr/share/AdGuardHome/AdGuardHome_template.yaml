@@ -147,6 +147,18 @@ user_rules:
 - '@@||eco.taobao.com^'
 - '@@||sessions.bugsnag.com^'
 - '@@||itunes.apple.com^'
+- '@@||www.hao123.com^'
+- '@@||update.pan.baidu.com^$important
+- '@@||issuecdn.baidupcs.com^$important
+- '@@||hkg.current.a.prd.aadg.trafficmanager.net^
+- '@@||api.mixpanel.com^$important
+- '#Apple'
+- '||access-sngapm.qcloud.com^$important'
+- '@@||newton-api.ele.me^$important'
+- '@@||www.paypalobjects.com^$important'
+- '@@||cs-op.douyucdn.cn^$important'
+- '@@||douyucdn.cn^$important'
+- '@@||eco.taobao.com^$important'
 dhcp:
   enabled: false
   interface_name: ""
