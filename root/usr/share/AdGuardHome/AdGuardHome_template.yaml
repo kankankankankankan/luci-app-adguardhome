@@ -90,7 +90,7 @@ filters:
   name: AdGuard DNS filter
   id: 1601235012
 - enabled: true
-  url: https://gitee.com/halflife/list/raw/master/ad.txt
+  url: https://halflife.coding.net/p/list/d/list/git/raw/master/ad.txt
   name: My AdFilters
   id: 1601235013
 - enabled: true
